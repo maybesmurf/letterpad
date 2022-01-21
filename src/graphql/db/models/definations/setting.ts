@@ -8,7 +8,7 @@ import { BaseModel } from "./base";
   timestamps: true,
   tableName: "settings",
 })
-@Fix
+//@Fix
 export class Setting extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public site_title!: string;

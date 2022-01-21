@@ -8,7 +8,7 @@ import { Role } from "./role";
   timestamps: true,
   tableName: "rolePermissions",
 })
-@Fix
+//@Fix
 export class RolePermission extends BaseModel {
   @ForeignKey(() => Role)
   public role_id!: number;

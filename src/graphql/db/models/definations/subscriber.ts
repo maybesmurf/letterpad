@@ -8,7 +8,7 @@ import { BaseModel } from "./base";
   timestamps: true,
   tableName: "subscribers",
 })
-@Fix
+//@Fix
 export class Subscribers extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public email!: string;

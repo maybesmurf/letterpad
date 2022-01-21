@@ -26,7 +26,7 @@ import Fix from "../decorators/Fix";
   timestamps: true,
   tableName: "authors",
 })
-@Fix
+//@Fix
 export class Author extends BaseModel {
   @PrimaryKey
   @AutoIncrement

@@ -7,7 +7,7 @@ import { BaseModel } from "./base";
   timestamps: true,
   tableName: "emails",
 })
-@Fix
+//@Fix
 export class Email extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public template_id!: EmailTemplates;

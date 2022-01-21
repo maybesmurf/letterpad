@@ -10630,7 +10630,7 @@ sequelize-typescript@^2.1.2:
   dependencies:
     glob "7.2.0"
 
-sequelize@^6.13.0:
+sequelize@^6.6.2:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-6.13.0.tgz#ce042fc511313094c1e4ca2b2ee13a563359e7b6"
   integrity sha512-p0dXXGZSc0Ng7CdGwlKN4P6DTRD/w9Ar2CnmHamNVDnqEWh6pMVOp3xrlG5+IWhbwrqL3SjIYEYt3Xog1vXRDw==

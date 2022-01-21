@@ -8,7 +8,7 @@ import { BaseModel } from "./base";
   timestamps: true,
   tableName: "uploads",
 })
-@Fix
+//@Fix
 export class Upload extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public url!: string;
