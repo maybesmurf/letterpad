@@ -25,6 +25,7 @@ export class Tag extends BaseModel {
   /* Associantions */
   @BelongsToMany(() => Post, {
     through: () => PostTag,
+    foreignKey: "tag_id",
   })
   public posts!: Post[];
   /* End Associantions */

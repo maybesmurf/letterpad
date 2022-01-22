@@ -90,6 +90,7 @@ export class Post extends BaseModel {
   // Tag
   @BelongsToMany(() => Tag, {
     through: () => PostTag,
+    foreignKey: "post_id",
   })
   public tags!: Tag[];
 

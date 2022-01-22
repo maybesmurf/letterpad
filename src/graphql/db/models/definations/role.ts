@@ -14,7 +14,7 @@ export class Role extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public name!: string;
 
-  /* Associantions */
+  /* Associations */
   @BelongsToMany(() => Permission, {
     through: () => RolePermission,
     foreignKey: "role_id",

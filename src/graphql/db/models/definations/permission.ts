@@ -16,6 +16,7 @@ export class Permission extends BaseModel {
   //role
   @BelongsToMany(() => Role, {
     through: () => RolePermission,
+    foreignKey: "permission_id",
   })
   public roles!: Role[];
   //end role
