@@ -17,7 +17,7 @@ import { Tag } from "./tag";
   timestamps: true,
   tableName: "posts",
 })
-//@Fix
+@Fix
 export class Post extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: true })
   public title!: string;

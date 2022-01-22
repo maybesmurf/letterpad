@@ -10,7 +10,7 @@ export class BaseModel extends Model {
   @PrimaryKey
   @AutoIncrement
   @Column({ type: DataType.INTEGER })
-  declare id: number;
+  public id!: number;
 
   @Column({
     type: DataType.DATE,
@@ -18,7 +18,7 @@ export class BaseModel extends Model {
       return getReadableDate(this.getDataValue("createdAt") || new Date());
     },
   })
-  declare createdAt: string;
+  public createdAt!: string;
 
   @Column({
     type: DataType.DATE,
@@ -26,7 +26,7 @@ export class BaseModel extends Model {
       return getReadableDate(this.getDataValue("updatedAt") || new Date());
     },
   })
-  declare updatedAt: string;
+  public updatedAt!: string;
 }
 
 const getReadableDate = (timestamp: Date) => {

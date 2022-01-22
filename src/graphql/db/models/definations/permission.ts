@@ -8,7 +8,7 @@ import { RolePermission } from "./rolePermission";
   timestamps: true,
   tableName: "permissions",
 })
-// //@Fix
+@Fix
 export class Permission extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public name!: string;

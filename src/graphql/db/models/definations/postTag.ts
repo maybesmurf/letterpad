@@ -8,7 +8,7 @@ import { Tag } from "./tag";
   timestamps: true,
   tableName: "postTags",
 })
-//@Fix
+@Fix
 export class PostTag extends BaseModel {
   @ForeignKey(() => Post)
   public tag_id!: number;

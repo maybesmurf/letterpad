@@ -7,7 +7,7 @@ import Fix from "../decorators/Fix";
   timestamps: true,
   tableName: "emailDelivery",
 })
-//@Fix
+@Fix
 export class EmailDelivery extends BaseModel {
   @Column({ type: DataType.STRING, allowNull: false })
   public template_id!: EmailTemplates;
